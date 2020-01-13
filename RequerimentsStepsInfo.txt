@@ -17,3 +17,9 @@ B: Get control
 C: Verify Deployment
 	1.- Execute “kubectl -n pyproject get deployment”
 
+
+
+
+Wister External IP
+ 13.89.137.255
+Try!!
