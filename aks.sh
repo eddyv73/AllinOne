@@ -13,4 +13,7 @@ kubectl -n pyproject apply -f ./deploymentpyproject
 echo Deployment End
 
 kubectl -n pyproject get pods
+kubectl -n pyproject get hpa
 
+echo External IP
+kubectl -n pyproject get svc pyprojectlb -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
