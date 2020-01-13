@@ -11,9 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Login to DockerHub Registry
-      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }}
-
+      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
     - name: Build the latest Docker image
-      run: docker build .  --tag wister/pyproject:latest
+      run: docker build . --file Dockerfile --tag wister/pyproject:latest
     - name: Push the latest Docker image
       run: docker push wister/pyproject:latest
