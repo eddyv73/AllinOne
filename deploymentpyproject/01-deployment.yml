@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: pyproject
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        role: pyproject
+    spec:
+      containers:
+      - name: pyproject
+        image: wister/pyproject:latest
+        imagePullPolicy: IfNotPresent        
+        ports:
+         - containerPort: 5000
