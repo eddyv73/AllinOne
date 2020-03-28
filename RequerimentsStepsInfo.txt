@@ -1,10 +1,3 @@
-The All in one
-This Project wants show, one way to create a Azure Kubernetes services with azure, az cli ,Build a docker images with github actions,
-push images to docker hub and show to do use a terraform with Azure and kubernetes.
-
-
-
-
 Requirements and Steps
 If you want create kubernetes cluster with terraform on azure.
 
@@ -23,3 +16,10 @@ B: Get control
 	2.-Execute “./aks.sh”
 C: Verify Deployment
 	1.- Execute “kubectl -n pyproject get deployment”
+
+
+
+
+Wister External IP
+ 13.89.137.255
+Try!!
