@@ -15,4 +15,4 @@ jobs:
     - name: Build the latest Docker image
       run: docker build . --file dockerfile --tag wister/allinone:latest
     - name: Push the latest Docker image
-      run: docker push wister/pyproject:latest
+      run: docker push wister/allinone:latest
